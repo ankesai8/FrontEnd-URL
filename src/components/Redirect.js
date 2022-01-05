@@ -6,7 +6,7 @@ function Redirect(props){
     
 const authToken= window.localStorage.getItem("auth-key")
 const instance = axios.create({
-  baseURL: 'https://suraj-url-backend.herokuapp.com',
+  baseURL: 'https://url-short-ner-6.herokuapp.com',
   headers:{
     "auth-token": authToken,
     
