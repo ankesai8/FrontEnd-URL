@@ -12,7 +12,7 @@ function App() {
   //setting token in header for that creating an axios instance
   const authToken = window.localStorage.getItem("auth-key");
   const instance = axios.create({
-    baseURL: "https://suraj-url-backend.herokuapp.com",
+    baseURL: "https://url-short-ner-6.herokuapp.com/",
     headers: {
       "auth-token": authToken,
     },
@@ -33,7 +33,7 @@ function App() {
 //get list of all the apis created up to date present in database
   async function getList() {
     try{
-      const response = await axios.get("https://suraj-url-backend.herokuapp.com/getUrls");
+      const response = await axios.get("https://url-short-ner-6.herokuapp.com/allUrls");
       setList(response.data);
     }catch(error){
       console.log(error)
@@ -116,7 +116,7 @@ function App() {
                       <td>
                         {" "}
                         USE BASE URL :
-                        https://suraj-url-backend.herokuapp.com/redirection/V2_XCP3OR +{" "}
+                        https://url-short-ner-6.herokuapp.com/V2_XCP3OR +{" "}
                         <span style={{ color: "rgb(0, 138, 192)" }}>
                           Short_Id{" "}
                         </span>
