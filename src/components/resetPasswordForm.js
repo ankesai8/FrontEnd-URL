@@ -11,7 +11,7 @@ function Newpassword(props) {
 //   api call for changeing the password
   async function resetPassword() {
       try{
-        const response = await axios.post("https://suraj-url-backend.herokuapp.com/new_password", {
+        const response = await axios.post("https://url-short-ner-6.herokuapp.com/new_password", {
             token: props.match.params.id,
             newpassword: pass,
           });
@@ -54,40 +54,13 @@ function Newpassword(props) {
   return (
     <>
       <div className="containers">
-        <div className="form">
-          <form onSubmit={handleSubmit}>
-            <div className="titles">
-              <p className="welcome">Create New Password</p>
-            </div>
+       <div className="form"> <form onSubmit={handleSubmit}> <div className="titles"> <p className="welcome">Generate New Password</p> </div>
 
-            <input
-              className="form-control text"
-              type="password"
-              value={pass}
-              name="createPass"
-              placeholder="Enter new password"
-              required
-              onChange={handleChange}
-            ></input>
-            <br />
-
-            <input
-              className="form-control text"
-              type="password"
-              value={confPass}
-              name="reEnter"
-              placeholder="Re-enter your password"
-              onChange={handleChange}
-              required
-            ></input>
-            <br />
-            <hr />
-            <button
-              type="submit"
-              className="btn-lg btn-block btn btn-primary btns"
-            >
-              Reset Password
-            </button>
+       <input className="form-control text" type="password" value={pass} name="createPass" placeholder="Enter new password" required onChange={handleChange} ></input> 
+       <br />
+       <input className="form-control text" type="password" value={confPass} name="reEnter" placeholder="Re-enter your password" onChange={handleChange} required ></input>
+       <br /> <hr />
+        <button type="submit" className="btn-lg btn-block btn btn-primary btns"> Reset Password</button>
           </form>
         </div>
       </div>
