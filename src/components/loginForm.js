@@ -66,6 +66,8 @@ function Login() {
              
            <div>
              <hr />
+             <hr />
+             <hr />
                 <div className="resetDiv">
                  <Link to="/forget_pass" style={{ marginTop: "20px", marginBottom: "20px" }} > Forget Password ?{" "} </Link>
                  <Link to="/register" style={{ marginBottom: "0" }}> Register </Link>
