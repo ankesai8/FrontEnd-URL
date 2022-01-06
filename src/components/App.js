@@ -66,47 +66,23 @@ function App() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-2 optionCol">
-            <button
-              onClick={() => {
-                setState(true);
-              }}
-              className="btn btn-primary btn-block btnss"
-            >
-              Generate New URL
-            </button>
+           <button onClick={() => { setState(true); }} className="btn btn-primary btn-block btnss" > shorten New URL </button>
             <br />
-            <button
-              onClick={() => {
-                setState(!state);
-                getList();
-              }}
-              className="btn btn-primary btn-block"
-            >
-              All URLS
-            </button>
+           <button onClick={() => { setState(!state); getList(); }} className="btn btn-primary btn-block" > All URLS </button>
+            <br />
+            <a href="/"><button style={{paddingTop:"0" , paddingBottom:"2px"}} className="btn btn-danger btn-block"
+             onClick={()=>{window.localStorage.setItem("auth-key" , "")}}>LogOut</button></a>
           </div>
           <div className="col-lg-10 dataCol">
             <div>
               {state === true ? (
                 <form onSubmit={handleSubmit} className="forms">
                   <p className="title">URL SHORTNER</p>
-                  <input
-                    type="text"
-                    className="urlText form-control"
-                    name="longurl"
-                    placeholder="Enter url"
-                    value={longurl}
-                    onChange={handleChange}
-                  ></input>
+                 <input type="text" className="urlText form-control" name="longurl" placeholder="Enter url" value={longurl} onChange={handleChange} ></input>
                   <br />
-                  <button type="submit" className="btn btn-primary">
-                    Get Url
-                  </button>
+                 <button type="submit" className="btn btn-primary">shorten Url </button>
                   <br />
-                  <p style={{ marginTop: "14px" }}>
-                    Copy and paste the below provided short link in new tab of
-                    your browser
-                  </p>
+                <p style={{ marginTop: "14px" }}> Copy and paste shorten link in new tab of your browser </p>
                   <p className="link">{newUrl}</p>
                 </form>
               ) : (
@@ -115,16 +91,15 @@ function App() {
                     <tr>
                       <td>
                         {" "}
-                        USE BASE URL :
-                        https://url-short-ner-6.herokuapp.com/redirection/V2_XCP3OR +{" "}
+                        USE BASE URL :https://url-short-ner-6.herokuapp.com/redirection/V2_XCP3OR +{" "}
                         <span style={{ color: "rgb(0, 138, 192)" }}>
                           Short_Id{" "}
                         </span>
                       </td>
                     </tr>
                     <tr>
-                      <td>Long Url</td>
-                      <td>Short_Id for Url</td>
+                      <td>Original Url</td>
+                      <td>Short_Id for original Url</td>
                     </tr>
                   </thead>
                   <tbody>
