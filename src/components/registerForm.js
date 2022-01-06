@@ -59,9 +59,8 @@ function RegisterForm() {
            <br /> 
            <input className="form-control text" type="password" value={password} name="password" placeholder="Enter password" required onChange={handleChange} ></input>
            <br />  
-           <button type="submit" className="btn-lg btn-block btn btn-primary btns" >Register</button>
+           <button type="submit" className="btn-lg btn-block btn btn-primary btns" >Register</button> 
 
-            
           </form>
         </div>
       </div>
