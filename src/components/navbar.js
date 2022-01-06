@@ -6,7 +6,8 @@ function NavBar(){
   const{result } = useContext(AppContext)
     return(
         <>
-        <nav className="navbar navbar-expand-lg navbar-light bg-info">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    
   <a className="navbar-brand" href="a" style={{color:"white" , fontWeight:"bolder" , fontSize:"1.5rem"}}>Shortner</a>
   <p className="profile">{result.name}</p>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +22,7 @@ function NavBar(){
     </div>
     </ul>
   </div>
-  <a href="/"><button style={{paddingTop:"0" , paddingBottom:"2px"}} className="btn btn-danger btn-small" onClick={()=>{window.localStorage.setItem("auth-key" , "")}}>LogOut</button></a>
+ 
 </nav>
         </>
     )
