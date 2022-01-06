@@ -82,7 +82,7 @@ function App() {
                   <br />
                  <button type="submit" className="btn btn-primary">shorten Url </button>
                   <br />
-                <p style={{ marginTop: "14px" }}> Copy and paste shorten link in new tab of your browser </p>
+                <p style={{ marginTop: "14px" }}>...Copy and paste shorten link in new tab of your browser...</p>
                   <p className="link">{newUrl}</p>
                 </form>
               ) : (
