@@ -68,9 +68,9 @@ function App() {
           <div className="col-lg-2 optionCol">
            <button onClick={() => { setState(true); }} className="btn btn-primary btn-block btnss" > shorten New URL </button>
             <br />
-           <button onClick={() => { setState(!state); getList(); }} className="btn btn-primary btn-block" > All URLS </button>
+           <button onClick={() => { setState(!state); getList(); }} className="btn btn-primary btn-block btnss" > All URLS </button>
             <br />
-            <a href="/"><button style={{paddingTop:"0" , paddingBottom:"2px"}} className="btn btn-danger btn-block"
+            <a href="/"><button style={{paddingTop:"0" , paddingBottom:"2px"}} className="btn btn-danger btn-block btnss"
              onClick={()=>{window.localStorage.setItem("auth-key" , "")}}>LogOut</button></a>
           </div>
           <div className="col-lg-10 dataCol">
