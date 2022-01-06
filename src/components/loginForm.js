@@ -57,53 +57,18 @@ function Login() {
     {/* if user has not successfully logedin than render the sign in form again  */}
       {result.length === 0 ? (
         <div className="containers">
-          <div className="form">
-            <form onSubmit={handleSubmit}>
-              <div className="titles">
-                <p className="welcome">Please Login to use Shortner</p>
-              </div>
-
-              <input
-                className="form-control text"
-                type="email"
-                value={name}
-                name="userName"
-                placeholder="Enter your email"
-                required
-                onChange={handleChange}
-              ></input>
-              <br />
-
-              <input
-                className="form-control text"
-                type="password"
-                value={password}
-                name="password"
-                placeholder="Enter your password"
-                onChange={handleChange}
-                required
-              ></input>
-              <br />
-
-              <button
-                type="submit"
-                className="btn-lg btn-block btn btn-primary btns"
-              >
-                Login
-              </button>
-              <div>
-                <hr />
+          <div className="form"> <form onSubmit={handleSubmit}> <div className="titles"> <p className="welcome">Please Login to Shortner Your Web Links</p> </div>
+          <input className="form-control text" type="email" value={name} name="userName" placeholder="Enter your email" required onChange={handleChange} ></input>
+           <br />
+          <input className="form-control text" type="password" value={password} name="password" placeholder="Enter your password" onChange={handleChange} required ></input>
+           <br />
+          <button type="submit" className="btn-lg btn-block btn btn-primary btns" >Login</button>
+             
+           <div>
+             <hr />
                 <div className="resetDiv">
-                  <Link
-                    to="/forget_pass"
-                    style={{ marginTop: "20px", marginBottom: "20px" }}
-                  >
-                    Forget Password ?{" "}
-                  </Link>
-
-                  <Link to="/register" style={{ marginBottom: "0" }}>
-                    SignUp/Register
-                  </Link>
+                 <Link to="/forget_pass" style={{ marginTop: "20px", marginBottom: "20px" }} > Forget Password ?{" "} </Link>
+                 <Link to="/register" style={{ marginBottom: "0" }}> Register </Link>
                 </div>
               </div>
             </form>
