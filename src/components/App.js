@@ -116,7 +116,7 @@ function App() {
                       <td>
                         {" "}
                         USE BASE URL :
-                        https://url-short-ner-6.herokuapp.com/V2_XCP3OR +{" "}
+                        https://url-short-ner-6.herokuapp.com/redirection/V2_XCP3OR +{" "}
                         <span style={{ color: "rgb(0, 138, 192)" }}>
                           Short_Id{" "}
                         </span>
