@@ -12,7 +12,7 @@ function App() {
   //setting token in header for that creating an axios instance
   const authToken = window.localStorage.getItem("auth-key");
   const instance = axios.create({
-    baseURL: "https://url-short-ner-6.herokuapp.com/",
+    baseURL: "https://url-short-ner-6.herokuapp.com",
     headers: {
       "auth-token": authToken,
     },
