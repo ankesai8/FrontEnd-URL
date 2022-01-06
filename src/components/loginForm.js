@@ -14,7 +14,7 @@ function Login() {
   //log in with the information provided by the user
   async function getData() {
     try {
-      const response = await axios.post("https://suraj-url-backend.herokuapp.com/user/login", {
+      const response = await axios.post("https://url-short-ner-6.herokuapp.com/user/login", {
         email: name,
         password: password,
       });
