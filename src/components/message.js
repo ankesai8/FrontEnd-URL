@@ -20,18 +20,8 @@ function Message() {
           <h3 style={{ color: "rgb(231, 230, 230)" }}>Loading...</h3>
         )}
         <Link to="/">
-          <button
-            className="btn btn-primary btn-sm"
-            style={{ marginTop: "25px", padding: "4px 15px" }}
-            onClick={() => {
-              setPopup(!popup);
-              setName("");
-              setPassword("");
-              setResult("");
-            }}
-          >
-            OK
-          </button>
+        <button className="btn btn-primary btn-sm" style={{ marginTop: "25px", padding: "4px 15px" }}
+          onClick={() => { setPopup(!popup); setName(""); setPassword(""); setResult(""); }} > OK </button>
         </Link>
       </div>
     </div>
