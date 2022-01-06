@@ -6,8 +6,8 @@ function NavBar(){
   const{result } = useContext(AppContext)
     return(
         <>
-    <nav className="navbar navbar-expand-lg navbar-light bg-block">    
-  <a className="navbar-brand" href="a" style={{color:"black" , fontWeight:"bolder" , fontSize:"1.5rem"}}>Shortner</a>
+        <nav className="navbar navbar-expand-lg navbar-light bg-block">
+  <a className="navbar-brand" href="a" style={{color:"white" , fontWeight:"bolder" , fontSize:"1.5rem"}}>URL Shortner</a>
   <p className="profile">{result.name}</p>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
@@ -21,10 +21,6 @@ function NavBar(){
     </div>
     </ul>
   </div>
- 
-
-  </div>
- 
  
 </nav>
         </>
