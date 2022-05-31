@@ -80,9 +80,11 @@ function App() {
                   <p className="title">URL SHORTNER</p>
                  <input type="text" className="urlText form-control" name="longurl" placeholder="Enter url" value={longurl} onChange={handleChange} ></input>
                   <br />
-                 <button type="submit" className="btn btn-primary">shorten Url </button>
+                 <button type="submit" className="btn btn-primary">SUBMIT </button>
                   <br />
-                <p style={{ marginTop: "14px" }}>...Copy and paste shorten link in new tab of your browser...</p>
+                <p style={{ marginTop: "14px" }}>
+               //   ...Copy and paste shorten link in new tab of your browser...
+                    </p>
                   <p className="link">{newUrl}</p>
                 </form>
               ) : (
@@ -91,7 +93,7 @@ function App() {
                     <tr>
                       <td>
                         {" "}
-                        USE BASE URL :https://url-short-ner-6.herokuapp.com/redirection/V2_XCP3OR +{" "}
+                       // USE BASE URL :https://url-short-ner-6.herokuapp.com/redirection/V2_XCP3OR +{" "}
                         <span style={{ color: "rgb(0, 138, 192)" }}>
                           Short_Id{" "}
                         </span>
@@ -99,7 +101,7 @@ function App() {
                     </tr>
                     <tr>
                       <td>Original Url</td>
-                      <td>Short_Id for original Url</td>
+//                       <td>Short_Id for original Url</td>
                     </tr>
                   </thead>
                   <tbody>
@@ -109,9 +111,9 @@ function App() {
                           <td style={{ color: "rgb(0, 138, 192)" }}>
                             {item.url}
                           </td>
-                          <td style={{ color: "rgb(0, 138, 192)" }}>
-                            {item.shortUrl}
-                          </td>
+//                           <td style={{ color: "rgb(0, 138, 192)" }}>
+//                             {item.shortUrl}
+//                           </td>
                         </tr>
                       );
                     })}
