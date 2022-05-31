@@ -66,7 +66,7 @@ function App() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-2 optionCol">
-           <button onClick={() => { setState(true); }} className="btn btn-primary btn-block btnss" >Shorten New URL </button>
+           <button onClick={() => { setState(true); }} className="btn btn-primary btn-block btnss" >New URL </button>
             <br />
            <button onClick={() => { setState(!state); getList(); }} className="btn btn-primary btn-block btnss" >All URLS </button>
             <br />
