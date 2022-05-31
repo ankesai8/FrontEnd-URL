@@ -77,10 +77,10 @@ function App() {
             <div>
               {state === true ? (
                 <form onSubmit={handleSubmit} className="forms">
-                  <p className="title">URL SHORTNER</p>
-                 <input type="text" className="urlText form-control" name="longurl" placeholder="Enter url" value={longurl} onChange={handleChange} ></input>
+                  <p className="title">ADD YOUR URLs</p>
+                 <input type="text" className="urlText form-control" name="longurl" placeholder="Enter Your URLS" value={longurl} onChange={handleChange} ></input>
                   <br />
-                 <button type="submit" className="btn btn-primary">SUBMIT </button>
+                 <button type="submit" className="btn btn-primary">SUBMIT</button>
                   <br />
                
                   <p className="link">{newUrl}</p>
